@@ -1,0 +1,41 @@
+name: frontend
+description: "A new Flutter project."
+publish_to: 'none' 
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.7.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  google_fonts: ^5.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_native_splash: ^2.2.30
+
+flutter:
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - lib/assets/images/
+    - lib/assets/images/banner/
+    - lib/assets/images/home-shells/
+    - lib/assets/images/shells/
+    - lib/assets/images/categories/
+
+flutter_native_splash:
+  color: "#FFFFFF"
+  image: "lib/assets/images/logo.png"
+  android: true
+  ios: true
+  web: false
+  android_gravity: center
+  ios_content_mode: center
+
