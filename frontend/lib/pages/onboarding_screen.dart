@@ -91,7 +91,7 @@ class OnboardingScreen extends StatelessWidget {
                     style: GoogleFonts.itim(
                       color: const Color.fromARGB(255, 255, 234, 206),
                       fontSize: 35,
-                      fontWeight: FontWeight.bold,
+                      fontWeight: FontWeight,
                       height: 0.7,
                       letterSpacing: 0.3,
                     ),
@@ -131,7 +131,7 @@ class OnboardingScreen extends StatelessWidget {
                               child: Text(
                                 'Get Started',
                                 style: GoogleFonts.poppins(
-                                  fontSize: 18,
+                                  fontSize: 30
                                   fontWeight: FontWeight.w600,
                                   color: Colors.white,
                                 ),
