@@ -91,7 +91,7 @@ class OnboardingScreen extends StatelessWidget {
                     style: GoogleFonts.itim(
                       color: const Color.fromARGB(255, 255, 234, 206),
                       fontSize: 35,
-                      fontWeight: FontWeight,
+                      fontWeight: FontWeight.bold,
                       height: 0.7,
                       letterSpacing: 0.3,
                     ),
@@ -131,7 +131,7 @@ class OnboardingScreen extends StatelessWidget {
                               child: Text(
                                 'Get Started',
                                 style: GoogleFonts.poppins(
-                                  fontSize: 30
+                                  fontSize: 18,
                                   fontWeight: FontWeight.w600,
                                   color: Colors.white,
                                 ),
@@ -270,7 +270,7 @@ class _GlowingButtonState extends State<_GlowingButton>
       onTapUp: _handleTapUp,
       onTapCancel: _handleTapCancel,
       child: AnimatedContainer(
-        duration: const Duration(milliseconds: 150),
+        duration: const Duration(milliseconds: 10),
         width: double.infinity,
         height: 56,
         decoration: BoxDecoration(
