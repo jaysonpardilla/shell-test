@@ -83,8 +83,7 @@ class BottomNav extends StatelessWidget {
               ),
             ),
           ),
-          _buildItem(icon: Icons.grid_view, label: 'Category', index: 3),
-          _buildItem(icon: Icons.search, label: 'Explore', index: 4),
+          _buildItem(icon: Icons.search, label: 'Explore', index: 3),
         ],
       ),
     );

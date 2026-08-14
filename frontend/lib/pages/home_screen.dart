@@ -5,7 +5,6 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../widgets/bottom_nav.dart';
-import 'category_screen.dart';
 import 'explore_screen.dart';
 import 'quiz_screen.dart';
 import 'scan_screen.dart';
@@ -24,7 +23,6 @@ class _HomeScreenState extends State<HomeScreen> {
     HomeContent(),
     QuizScreen(),
     ScanScreen(),
-    CategoryScreen(),
     ExploreScreen(),
   ];
 
@@ -467,41 +465,6 @@ class _AutoScrollCategoriesState extends State<_AutoScrollCategories> {
     );
   }
 }
-
-// ignore: unused_element
-class _CategoryCard extends StatelessWidget {
-  const _CategoryCard({required this.label, required this.image});
-
-  final String label;
-  final String image;
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      width: 92,
-      decoration: BoxDecoration(
-        color: Colors.white,
-        borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: Colors.grey.shade300),
-      ),
-      padding: const EdgeInsets.all(8),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Expanded(
-            child: image.startsWith('http')
-                ? Image.network(image, fit: BoxFit.contain)
-                : Image.asset(image, fit: BoxFit.contain),
-          ),
-          const SizedBox(height: 6),
-          Text(label, style: GoogleFonts.poppins(fontSize: 12)),
-        ],
-      ),
-    );
-  }
-}
-
-
 
 class _ExploreCard extends StatelessWidget {
   const _ExploreCard({required this.index});

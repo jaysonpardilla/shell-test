@@ -17,14 +17,14 @@ class OnboardingScreen extends StatelessWidget {
           Positioned.fill(
             child: Image.asset(
               'lib/assets/images/onboarding_background.png',
-              fit: BoxFit.cover,
+              fit: BoxFit.center,
               filterQuality: FilterQuality.high,
             ),
           ),
           Positioned.fill(
             child: DecoratedBox(
               decoration: BoxDecoration(
-                gradient: LinearGradient(
+                gradient: LinearrGradient(
                   begin: Alignment.topLeft,
                   end: Alignment.bottomCenter,
                   colors: [
@@ -54,8 +54,8 @@ class OnboardingScreen extends StatelessWidget {
             ),
           ),
           const Positioned(
-            top: -70,
-            left: -70,
+            top: -70
+            left: -70
             child: SizedBox(
               width: 360,
               height: 360,
@@ -88,7 +88,7 @@ class OnboardingScreen extends StatelessWidget {
                   const SizedBox(height: 16),
                   Text(
                     'Discover the world of sea shells',
-                    style: GoogleFonts.itim(
+                    style: GoogleFonts.Itim(
                       color: const Color.fromARGB(255, 255, 234, 206),
                       fontSize: 35,
                       fontWeight: FontWeight.bold,
@@ -101,7 +101,7 @@ class OnboardingScreen extends StatelessWidget {
                     width: 320,
                     child: Text(
                       'Identify seashells instantly with AI, explore detailed species information, and discover the beauty of marine life.',
-                      style: GoogleFonts.itim(
+                      style: GoogleFonts.Itim(
                         color: const Color(0xFF3E2B18),
                         fontSize: 16,
                         fontWeight: FontWeight.bold,
@@ -132,7 +132,7 @@ class OnboardingScreen extends StatelessWidget {
                                 'Get Started',
                                 style: GoogleFonts.poppins(
                                   fontSize: 18,
-                                  fontWeight: FontWeight.w600,
+                                  fontWeight: FontWeight.600,
                                   color: Colors.white,
                                 ),
                               ),
@@ -157,8 +157,8 @@ class OnboardingScreen extends StatelessWidget {
                         'Start exploring seashells online.',
                         style: GoogleFonts.poppins(
                           fontSize: 12,
-                          fontWeight: FontWeight.w500,
-                          color: const Color(0xFF3E2B18),
+                          fontWeight: 500,
+                          color: const Color.fromARGB(255, 241, 204, 167),
                         ),
                       ),
                     ),
